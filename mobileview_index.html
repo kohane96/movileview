@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>スマホビュー専用プレビュー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      font-family: sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 16px 0;
+    }
+    .phone {
+      width: 390px;
+      background: #111;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      padding: 10px;
+    }
+    .thumbnail {
+      margin-bottom: 16px;
+    }
+    .thumbnail img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .info {
+      padding: 4px 0;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .channel {
+      font-size: 12px;
+      color: #ccc;
+    }
+    .time {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      font-size: 11px;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    .thumbnail-wrapper {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>スマホビュー専用プレビュー</h1>
+  <div class="phone">
+    <div class="thumbnail">
+      <div class="thumbnail-wrapper">
+        <img src="roadmap1.png" alt="サムネ1">
+        <div class="time">12:34</div>
+      </div>
+      <div class="info">
+        <div class="title">サムネイルタイトル1</div>
+        <div class="channel">チャンネル名1・1.2万回視聴</div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-wrapper">
+        <img src="roadmap2.png" alt="サムネ2">
+        <div class="time">9:01</div>
+      </div>
+      <div class="info">
+        <div class="title">サムネイルタイトル2</div>
+        <div class="channel">チャンネル名2・8600回視聴</div>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="thumbnail-wrapper">
+        <img src="roadmap3.png" alt="サムネ3">
+        <div class="time">5:43</div>
+      </div>
+      <div class="info">
+        <div class="title">サムネイルタイトル3</div>
+        <div class="channel">チャンネル名3・3.1万回視聴</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
