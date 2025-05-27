@@ -11,31 +11,24 @@
       padding: 20px;
       margin: 0;
     }
+
     .thumbnail {
-      position: relative;
       background-color: #111;
-      padding: 10px;
       margin-bottom: 20px;
       border-radius: 10px;
+      overflow: hidden;
     }
-    .thumbnail img {
-      width: 92%;
-      max-width: 330px;
+
+    .thumb-wrap {
+      position: relative;
+    }
+
+    .thumb-wrap img {
+      width: 100%;
+      height: auto;
       display: block;
-      margin: 8px auto;
-      border-radius: 6px;
     }
-    .info {
-      padding: 4px 10px;
-    }
-    .title {
-      font-size: 16px;
-      font-weight: bold;
-    }
-    .channel {
-      font-size: 14px;
-      color: #ccc;
-    }
+
     .time {
       position: absolute;
       bottom: 8px;
@@ -46,14 +39,31 @@
       border-radius: 4px;
       color: #fff;
     }
+
+    .info {
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .channel {
+      font-size: 14px;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
   <h1>スマホ風サムネ確認ツール</h1>
 
   <div class="thumbnail">
-    <img src="samune1.png" alt="サムネイル1">
-    <div class="time">12:34</div>
+    <div class="thumb-wrap">
+      <img src="samune1.png" alt="サムネイル1">
+      <div class="time">12:34</div>
+    </div>
     <div class="info">
       <div class="title">サムネイルタイトル1</div>
       <div class="channel">チャンネル名1・1.2万回視聴</div>
@@ -61,8 +71,10 @@
   </div>
 
   <div class="thumbnail">
-    <img src="samune2.png" alt="サムネイル2">
-    <div class="time">9:01</div>
+    <div class="thumb-wrap">
+      <img src="samune2.png" alt="サムネイル2">
+      <div class="time">9:01</div>
+    </div>
     <div class="info">
       <div class="title">サムネイルタイトル2</div>
       <div class="channel">チャンネル名2・8600回視聴</div>
@@ -70,8 +82,10 @@
   </div>
 
   <div class="thumbnail">
-    <img src="samune3.png" alt="サムネイル3">
-    <div class="time">5:43</div>
+    <div class="thumb-wrap">
+      <img src="samune3.png" alt="サムネイル3">
+      <div class="time">5:43</div>
+    </div>
     <div class="info">
       <div class="title">サムネイルタイトル3</div>
       <div class="channel">チャンネル名3・3.1万回視聴</div>
@@ -79,8 +93,10 @@
   </div>
 
   <div class="thumbnail">
-    <img src="samune4.png" alt="サムネイル4">
-    <div class="time">7:22</div>
+    <div class="thumb-wrap">
+      <img src="samune4.png" alt="サムネイル4">
+      <div class="time">7:22</div>
+    </div>
     <div class="info">
       <div class="title">サムネイルタイトル4</div>
       <div class="channel">チャンネル名4・5900回視聴</div>
@@ -89,4 +105,3 @@
 
 </body>
 </html>
-
